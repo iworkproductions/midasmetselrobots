@@ -1,0 +1,23 @@
+REDIRECTS bij mijn.host · type: 301 (permanent), GEEN frame/masking · doel altijd de volledige URL
+
+metselrobotkopen.nl        -> https://midasmetselrobots.nl/kopen
+metselrobotkopen.be        -> https://midasmetselrobots.nl/kopen
+metselrobothuren.nl        -> https://midasmetselrobots.nl/huren
+metselrobothuren.be        -> https://midasmetselrobots.nl/huren
+metselrobotprijs.nl        -> https://midasmetselrobots.nl/prijzen
+metselmachine.nl           -> https://midasmetselrobots.nl/merken
+metselaartekort.nl         -> https://midasmetselrobots.nl/metselaartekort
+bouwenzondermetselaars.nl  -> https://midasmetselrobots.nl/metselaartekort
+automatischmetselen.nl     -> https://midasmetselrobots.nl/automatisch-metselen
+metselwerkautomatiseren.nl -> https://midasmetselrobots.nl/automatisch-metselen
+zonderprofielen.nl         -> https://midasmetselrobots.nl/automatisch-metselen
+midasmetselrobots.be       -> https://midasmetselrobots.nl/
+
+Tijdelijk naar de homepage (tot de Duitse pagina's er zijn, fase 3):
+mauerroboterkaufen.de      -> https://midasmetselrobots.nl/
+mauermaschine.de           -> https://midasmetselrobots.nl/
+maurermangel.de            -> https://midasmetselrobots.nl/
+automatischmauern.de       -> https://midasmetselrobots.nl/
+mauerroboteren.lu          -> https://midasmetselrobots.nl/
+
+Check per domein: ook 'www.' meenemen, en na instellen in incognito testen of je op de juiste pagina landt (niet in een kader).
