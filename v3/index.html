@@ -150,4 +150,18 @@ function show(n){slides.forEach(function(s){s.classList.remove('actief')});var e
  else{timer=setTimeout(next,6000);}}
 function next(){clearTimeout(timer);i=(i+1)%slides.length;show(i);}
 show(0);})();
+</script><script>
+(function(){
+ var isMobile=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)&&('ontouchstart' in window);
+ if(isMobile)return; // on phones tel: just works (opens dialer)
+ document.addEventListener('click',function(e){
+   var a=e.target.closest && e.target.closest('a[href^="tel:"]');
+   if(!a)return;
+   e.preventDefault();
+   var nr='06 40 50 64 51';
+   var go=confirm('Bel Midas op '+nr+'.\n\nKlik OK om te bellen, of Annuleren om via WhatsApp te appen.');
+   if(go){window.location.href='tel:+31640506451';}
+   else{window.location.href='https://wa.me/31640506451?text=Hoi%20Midas%2C%20ik%20heb%20een%20vraag%20via%20de%20website.';}
+ });
+})();
 </script></body></html>

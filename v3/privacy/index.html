@@ -57,4 +57,18 @@ header{position:sticky;top:0;background:rgba(255,255,255,.72);backdrop-filter:sa
 <p>Metselrobots Benelux · midas@midasmetselrobots.nl · +31 6 40 50 64 51</p>
 <p class="klein">Versie augustus 2026. Dit is een modelverklaring; laat hem vóór publicatie kort toetsen door een jurist.</p>
 <a class="terug" href="/">‹ Terug naar de site</a>
-</main></body></html>
+</main><script>
+(function(){
+ var isMobile=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)&&('ontouchstart' in window);
+ if(isMobile)return; // on phones tel: just works (opens dialer)
+ document.addEventListener('click',function(e){
+   var a=e.target.closest && e.target.closest('a[href^="tel:"]');
+   if(!a)return;
+   e.preventDefault();
+   var nr='06 40 50 64 51';
+   var go=confirm('Bel Midas op '+nr+'.\n\nKlik OK om te bellen, of Annuleren om via WhatsApp te appen.');
+   if(go){window.location.href='tel:+31640506451';}
+   else{window.location.href='https://wa.me/31640506451?text=Hoi%20Midas%2C%20ik%20heb%20een%20vraag%20via%20de%20website.';}
+ });
+})();
+</script></body></html>

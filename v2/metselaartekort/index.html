@@ -171,4 +171,18 @@ header{position:sticky;top:0;background:rgba(255,255,255,.72);backdrop-filter:sa
 function update(){const y=window.scrollY;header.classList.toggle("glas",y>40);const doel=Math.min(1,Math.max(0,y/((document.documentElement.scrollHeight-innerHeight)||1)));vlot+=(doel-vlot)*(beweeg?0.14:1);if(Math.abs(doel-vlot)<0.0005)vlot=doel;v.forEach((f,i)=>{f.style.transform="scaleX("+Math.min(1,Math.max(0,(vlot*v.length)-i))+")";});if(vlot!==doel){requestAnimationFrame(update);return;}ticking=false;}
 window.addEventListener("scroll",()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});update();})();</script><script>(function(){const d=document.getElementById('dd');if(!d)return;const k=d.querySelector('.dd-knop');k.addEventListener('click',e=>{if(window.matchMedia('(hover: none)').matches){e.preventDefault();d.classList.toggle('open');}});document.addEventListener('click',e=>{if(!d.contains(e.target))d.classList.remove('open');});})();</script>
 <script src="/assets/beheer.js"></script>
-</body></html>
+<script>
+(function(){
+ var isMobile=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)&&('ontouchstart' in window);
+ if(isMobile)return; // on phones tel: just works (opens dialer)
+ document.addEventListener('click',function(e){
+   var a=e.target.closest && e.target.closest('a[href^="tel:"]');
+   if(!a)return;
+   e.preventDefault();
+   var nr='06 40 50 64 51';
+   var go=confirm('Bel Midas op '+nr+'.\n\nKlik OK om te bellen, of Annuleren om via WhatsApp te appen.');
+   if(go){window.location.href='tel:+31640506451';}
+   else{window.location.href='https://wa.me/31640506451?text=Hoi%20Midas%2C%20ik%20heb%20een%20vraag%20via%20de%20website.';}
+ });
+})();
+</script></body></html>

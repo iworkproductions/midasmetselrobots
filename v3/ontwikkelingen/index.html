@@ -33,4 +33,18 @@ header{position:sticky;top:0;background:rgba(255,255,255,.72);backdrop-filter:sa
 <a href="#"><small>19 augustus 2026</small><h3>Het metselaarstekort in vijf getallen</h3><p>Instroom, uitstroom, leeftijd, loon en wat het over vijf jaar betekent.</p></a>
 </div></section><div class="v2nb"><div class="v2wrap v2nbin"><div><h2>Houd me op de hoogte.</h2><p>Eén mail per maand. Robots, tekort, prijzen. Geen reclame.</p></div><form onsubmit="return false"><input type="email" placeholder="naam@bedrijf.nl"><button>Aanmelden</button></form></div></div>
 <footer class="v2f"><div class="v2wrap v2fb"><div><a class="v2logo" href="/v3/"><span class="v2blok"><span>MIDAS</span><img class="v2emb" src="/assets/logo.png" alt=""><span class="v2rob">METSELROBOTS</span></span></a><p style="margin:16px 0 0;max-width:320px;color:#aaa">Het onafhankelijke platform dat robots vergelijkt en werk regelt in Nederland, België en Luxemburg.</p></div><div class="v2kol"><a href="/v3/kopen/">Metselrobot kopen</a><a href="/v3/huren/">Metselrobot huren</a><a href="/v3/prijzen/">Prijzen</a><a href="/v3/merken/">Merken</a><a href="/v3/metselaartekort/">Metselaarstekort</a></div><div class="v2kol"><a href="/v3/ontwikkelingen/">Ontwikkelingen</a><a href="/v3/netwerk/">Het netwerk</a><a href="/v3/over-midas/">Over Midas</a></div><div class="v2kol"><a href="tel:+31640506451">+31 6 40 50 64 51</a><a href="mailto:midas@midasmetselrobots.nl">midas@midasmetselrobots.nl</a><a href="/v3/privacy/">Privacy</a><a href="/v3/voorwaarden/">Voorwaarden</a></div></div></footer><div class="v2fund"></div>
-</body></html>
+<script>
+(function(){
+ var isMobile=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent)&&('ontouchstart' in window);
+ if(isMobile)return; // on phones tel: just works (opens dialer)
+ document.addEventListener('click',function(e){
+   var a=e.target.closest && e.target.closest('a[href^="tel:"]');
+   if(!a)return;
+   e.preventDefault();
+   var nr='06 40 50 64 51';
+   var go=confirm('Bel Midas op '+nr+'.\n\nKlik OK om te bellen, of Annuleren om via WhatsApp te appen.');
+   if(go){window.location.href='tel:+31640506451';}
+   else{window.location.href='https://wa.me/31640506451?text=Hoi%20Midas%2C%20ik%20heb%20een%20vraag%20via%20de%20website.';}
+ });
+})();
+</script></body></html>
