@@ -1,0 +1,99 @@
+<!doctype html><html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>v2 preview · Midas Metselrobots</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,500;112,700;112,900&family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFD60A;--k:#000;--g:#6b6a66;--l:#e9e7e0;--z:#f6f5f2}
+*{box-sizing:border-box}body{margin:0;font-family:Archivo,Helvetica,Arial,sans-serif;color:var(--k);background:#fff;font-size:17px;line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;background:#fff;border-bottom:3px solid var(--y);z-index:9}
+.hb{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px}
+.blok{position:relative;display:inline-flex;align-items:center;gap:10px;background:var(--k);color:#fff;padding:9px 16px 9px 14px;transition:background .15s,color .15s;font-weight:900;font-stretch:112%;letter-spacing:.06em;font-size:20px;line-height:1;overflow:visible}
+.blok .rob{font-weight:900;font-size:20px;letter-spacing:.06em}
+.logo:hover .blok,.logo.actief .blok{background:var(--y);color:var(--k)}
+.snede{display:none}
+.embleem{width:66px;height:66px;border-radius:50%;background:#fff;margin:-22px 4px;position:relative;z-index:1}
+nav{display:flex;align-items:center;gap:30px;font-weight:500;font-size:16px}
+.bel{background:var(--y);padding:11px 20px;border-radius:999px;font-weight:700}
+.hero{position:relative;height:640px;overflow:hidden;background:#000}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:wissel 24s infinite}
+.hero img:nth-child(2){animation-delay:6s}.hero img:nth-child(3){animation-delay:12s}.hero img:nth-child(4){animation-delay:18s}
+@keyframes wissel{0%{opacity:0}5%{opacity:1}25%{opacity:1}30%{opacity:0}100%{opacity:0}}
+.sluier{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(0,0,0,.72))}
+.hi{position:absolute;left:0;right:0;bottom:64px;color:#fff}
+.hi h1{font-size:64px;line-height:1.02;margin:0 0 14px;font-weight:900;font-stretch:112%;letter-spacing:-.01em}
+.hi p{font-size:21px;margin:0 0 26px;max-width:640px}
+.knop{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;font-size:17px}
+.kp{background:var(--y);color:var(--k)}.ks{border:2px solid #fff;color:#fff;margin-left:10px}
+.dots{position:absolute;right:28px;bottom:26px;display:flex;gap:8px}.dots i{width:9px;height:9px;border-radius:50%;background:#fff6}.dots i.on{background:#fff}
+section{padding:80px 0}
+h2{font-size:38px;line-height:1.1;margin:0 0 12px;font-weight:900;font-stretch:112%}
+.lead{font-size:19px;color:var(--g);max-width:640px;margin:0 0 40px}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:3px solid var(--y)}
+.twee a{padding:48px 40px;border-bottom:1px solid var(--l)}.twee a:first-child{border-right:1px solid var(--l)}
+.twee h3{font-size:30px;margin:0 0 8px;font-weight:900;font-stretch:112%}.twee p{color:var(--g);margin:0 0 18px}
+.twee span{font-weight:700;border-bottom:3px solid var(--y)}
+.stappen{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.stap b{display:block;font-size:54px;line-height:1;color:var(--y);font-weight:900;margin-bottom:8px;-webkit-text-stroke:1.5px #000}
+.stap h3{font-size:22px;margin:0 0 6px}.stap p{margin:0;color:var(--g)}
+.grijs{background:var(--z)}
+.merken{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.merk{background:#fff;border:1px solid var(--l);padding:22px;min-height:120px}.merk b{display:block;font-size:20px;font-weight:900;font-stretch:112%}.merk small{color:var(--g)}
+.wiel{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.tegel{position:relative;aspect-ratio:4/3;overflow:hidden;background:#000}.tegel img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.tegel span{position:absolute;left:14px;bottom:12px;color:#fff;font-weight:700;font-size:18px}
+.tegel.meer{display:flex;align-items:center;justify-content:center;background:var(--y)}.tegel.meer span{position:static;color:#000;text-align:center;padding:20px}
+.art{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.art a{border-top:3px solid #000;padding-top:16px}.art small{color:var(--g)}.art h3{font-size:21px;line-height:1.25;margin:6px 0 8px}.art p{color:var(--g);margin:0;font-size:16px}
+.net{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.kaart{background:#fff;border:1px solid var(--l);padding:20px}.kaart .av{width:56px;height:56px;border-radius:50%;background:#000;margin-bottom:12px}
+.kaart b{display:block;font-size:18px}.kaart small{color:var(--g)}
+.kaart.leeg{border:2px dashed #000;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:700}
+.over{display:grid;grid-template-columns:420px 1fr;gap:56px;align-items:center}
+.over img{width:100%;aspect-ratio:1;object-fit:cover}
+.over blockquote{margin:0 0 18px;font-size:30px;line-height:1.25;font-weight:900;font-stretch:112%}
+.nb{background:#000;color:#fff;padding:64px 0}
+.nb .in{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.nb h2{color:#fff;margin:0 0 6px}.nb p{margin:0;color:#bbb}
+.nb form{display:flex;gap:10px}.nb input{flex:1;padding:16px 18px;font-size:17px;border:0;font-family:inherit}.nb button{background:var(--y);border:0;padding:16px 26px;font-weight:700;font-size:17px;font-family:inherit;cursor:pointer}
+footer{background:#000;color:#aaa;padding:48px 0;font-size:15px;border-top:1px solid #222}
+footer .fb{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;flex-wrap:wrap}
+footer .blok{background:#000;color:#fff}footer a{color:#ddd}footer .kol a{display:block;margin-bottom:6px}
+.fund{height:10px;background:var(--y)}
+@media(max-width:900px){.twee,.stappen,.merken,.wiel,.art,.net,.over,.nb .in{grid-template-columns:1fr 1fr}.hi h1{font-size:44px}nav a:not(.bel){display:none}}
+</style></head><body>
+<header><div class="wrap hb"><a class="logo actief" href="/v2/"><span class="blok"><span>MIDAS</span><img class="embleem" src="/assets/logo.png" alt=""><span class="rob">METSELROBOTS</span></span></a><nav><a href="#robots">Robots</a><a href="#vakwerk">Vakwerk</a><a href="#ontwikkelingen">Ontwikkelingen</a><a href="#netwerk">Het netwerk</a><a href="#midas">Over Midas</a><a class="bel" href="tel:+31640506451">Bel Midas</a></nav></div></header>
+
+<div class="hero"><img src="/assets/werf.jpg" alt="Metselrobot op de bouwplaats"><img src="/assets/arm.jpg" alt="Robotarm plaatst een steen"><img src="/assets/grip.jpg" alt="Detail van de grijper"><img src="/assets/portret-bouw.jpg" alt="Vakman met helm op de bouwplaats" onerror="this.remove()"><div class="sluier"></div>
+<div class="hi"><div class="wrap"><h1>De bouw gaat verder.</h1><p>Robots, vakwerk en advies. Onafhankelijk vergeleken, door één nummer geregeld.</p><a class="knop kp" href="#bouw">Ik bouw</a><a class="knop ks" href="#huis">Ik wil iets aan mijn huis</a></div></div>
+<div class="dots"><i class="on"></i><i></i><i></i></div></div>
+
+<div class="wrap twee"><a href="#robots" id="bouw"><h3>Ik bouw.</h3><p>Aannemer, metselbedrijf of ontwikkelaar. Een robot voor volume, een ploeg voor het vakwerk, of allebei. Eén gesprek, deze week een plan.</p><span>Bekijk robots en volume</span></a><a href="#vakwerk" id="huis"><h3>Ik wil iets aan mijn huis.</h3><p>Gevel, voegwerk, dakkapel, kozijnen of schilderwerk. Midas belt je, kiest de juiste vakman en houdt het in de gaten tot het klaar is.</p><span>Bekijk vakwerk</span></a></div>
+
+<section><div class="wrap"><h2>Zo werkt het.</h2><p class="lead">Geen formulieren, geen offertecircus. Drie stappen.</p><div class="stappen">
+<div class="stap"><b>1</b><h3>Je belt of appt Midas</h3><p>Vertel wat je wilt laten doen. Vijf minuten.</p></div>
+<div class="stap"><b>2</b><h3>Wij rekenen het door</h3><p>Robot, vakman of allebei. Eerlijk advies, ook als het antwoord "nog niet" is.</p></div>
+<div class="stap"><b>3</b><h3>Deze week een plan</h3><p>Eén aanspreekpunt van eerste telefoontje tot oplevering.</p></div></div></div></section>
+
+<section class="grijs" id="robots"><div class="wrap"><h2>Alle metselrobots, onafhankelijk vergeleken.</h2><p class="lead">Wij verkopen geen merk. Wij vergelijken ze en zeggen welke bij jouw werk past. Bijgewerkt op 31 augustus 2026.</p>
+<div class="merken"><div class="merk"><b>Ropax</b><small>Nederland · kopen en huren · gevels</small></div><div class="merk"><b>Monumental</b><small>Nederland · metselwerk per m²</small></div><div class="merk"><b>Wally</b><small>Prototype · volgen</small></div><div class="merk"><b>Alle merken</b><small>Vergelijking, prijzen, kopen of huren</small></div></div></div></section>
+
+<section id="vakwerk"><div class="wrap"><h2>Vakwerk door mensen die het kunnen.</h2><p class="lead">Uit het netwerk van Midas, achttien jaar op de steiger. Alleen mensen waar hij zelf voor instaat.</p><div class="wiel"><a class="tegel" href="#"><img src="/assets/wiel-metselwerk.jpg" alt=""><span>Metselwerk</span></a><a class="tegel" href="#"><img src="/assets/wiel-voegwerk.jpg" alt=""><span>Voegwerk</span></a><a class="tegel" href="#"><img src="/assets/wiel-crepi.jpg" alt=""><span>Crepi en stucwerk</span></a><a class="tegel" href="#"><img src="/assets/wiel-schilderwerk.jpg" alt=""><span>Schilderwerk</span></a><a class="tegel" href="#"><img src="/assets/wiel-kozijnen.jpg" alt=""><span>Kozijnen</span></a><a class="tegel" href="#"><img src="/assets/wiel-dakkapellen.jpg" alt=""><span>Dakkapellen</span></a><a class="tegel" href="#"><img src="/assets/wiel-avantgarde.jpg" alt=""><span>Avant-Garde gevel</span></a><a class="tegel meer" href="tel:+31640506451"><span>Iets anders? Bel Midas.</span></a></div></div></section>
+
+<section class="grijs" id="ontwikkelingen"><div class="wrap"><h2>Ontwikkelingen.</h2><p class="lead">Elke week wat er beweegt in robots, tekort en bouw. Kort, met bronnen.</p><div class="art">
+<a href="#"><small>2 september 2026</small><h3>Waar staan de metselrobots in september 2026</h3><p>Ropax levert, Monumental groeit, Wally test. Wat dat betekent voor jouw planning.</p></a>
+<a href="#"><small>26 augustus 2026</small><h3>Wat kost een metselrobot echt, per m²</h3><p>Koop, huur en werk per meter naast elkaar gezet, met de cijfers die fabrikanten niet op hun site zetten.</p></a>
+<a href="#"><small>19 augustus 2026</small><h3>Het metselaarstekort in vijf getallen</h3><p>Instroom, uitstroom, leeftijd, loon en wat het over vijf jaar betekent.</p></a></div></div></section>
+
+<section id="netwerk"><div class="wrap"><h2>Het netwerk.</h2><p class="lead">De mensen achter het vakwerk. Geen anonieme leadsite, gezichten.</p><div class="net">
+<div class="kaart"><div class="av"></div><b>Naam</b><small>Voegwerk · Waalwijk en omgeving</small></div>
+<div class="kaart"><div class="av"></div><b>Naam</b><small>Metselwerk · Brabant</small></div>
+<div class="kaart"><div class="av"></div><b>Naam</b><small>Schilderwerk · Tilburg</small></div>
+<div class="kaart leeg">Wil je hier staan?<br>Bel Midas.</div></div></div></section>
+
+<section class="grijs" id="midas"><div class="wrap over"><img src="/assets/midas.jpg" alt="Midas"><div><blockquote>"Achttien jaar heb ik stenen gelegd. Nu leg ik verbindingen."</blockquote><p>Midas is hoofd sales en oprichter van Metselrobots Benelux. Hij kent de bouwplaats, de mensen en de machines. Daarom belt hij elke aanvraag zelf na en zegt hij ook nee als iets niet klopt.</p><a class="knop kp" href="#">Over Midas</a></div></div></section>
+
+<div class="nb"><div class="wrap in"><div><h2>Houd me op de hoogte.</h2><p>Eén mail per maand. Robots, tekort, prijzen. Geen reclame.</p></div><form onsubmit="return false"><input type="email" placeholder="naam@bedrijf.nl"><button>Aanmelden</button></form></div></div>
+<footer><div class="wrap fb"><div><a class="logo" href="#"><span class="blok"><span>MIDAS</span><img class="embleem" src="/assets/logo.png" alt=""><span class="rob">METSELROBOTS</span></span></a><p style="margin:16px 0 0;max-width:320px">Het onafhankelijke platform dat robots vergelijkt en werk regelt in Nederland, België en Luxemburg.</p></div><div class="kol"><a href="#">Metselrobot kopen</a><a href="#">Metselrobot huren</a><a href="#">Prijzen</a><a href="#">Merken</a><a href="#">Metselaarstekort</a></div><div class="kol"><a href="#">Ontwikkelingen</a><a href="#">Het netwerk</a><a href="#">Over Midas</a><a href="#">te-RUGfonds</a><a href="#">Maatje-programma</a></div><div class="kol"><a href="tel:+31640506451">+31 6 40 50 64 51</a><a href="mailto:midas@midasmetselrobots.nl">midas@midasmetselrobots.nl</a><a href="#">Privacy</a><a href="#">Voorwaarden</a></div></div></footer><div class="fund"></div>
+</body></html>
