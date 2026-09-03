@@ -32,7 +32,9 @@ nav{display:flex;align-items:center;gap:38px;font-weight:500;font-size:17px}
 .hi h1{font-size:56px;line-height:1.02;margin:0 0 14px;font-weight:900;font-stretch:112%;letter-spacing:-.01em}
 .hi p{font-size:21px;margin:0 0 26px;max-width:640px}
 .knop{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;font-size:17px}
-.kp{background:var(--y);color:var(--k)}.ks{border:2px solid #fff;color:#fff;margin-left:10px}
+.kp{background:var(--y);color:var(--k)}.ks{border:2px solid #fff;color:#fff}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hi .knop{white-space:nowrap}
 .dots{position:absolute;right:28px;bottom:26px;display:flex;gap:8px}.dots i{width:9px;height:9px;border-radius:50%;background:#fff6}.dots i.on{background:#fff}
 section{padding:80px 0}
 h2{font-size:38px;line-height:1.1;margin:0 0 12px;font-weight:900;font-stretch:112%}
@@ -83,7 +85,7 @@ footer .blok{background:#000;color:#fff}footer a{color:#ddd}footer .kol a{displa
 .weeg{max-width:760px;margin:40px auto 0}
 .balk{position:relative;height:12px;background:#eee;border-radius:999px}
 .vul{position:absolute;left:0;top:0;height:100%;width:50%;background:var(--y);border-radius:999px}
-.knop{position:absolute;top:50%;left:50%;width:34px;height:34px;background:#000;border:3px solid var(--y);border-radius:50%;transform:translate(-50%,-50%);cursor:grab}
+.weeg .knop{position:absolute;top:50%;left:50%;width:34px;height:34px;background:#000;border:3px solid var(--y);border-radius:50%;transform:translate(-50%,-50%);cursor:grab}
 .weeglab{display:flex;justify-content:space-between;margin-top:14px;color:var(--g);font-size:15px}
 .advies{margin-top:18px;text-align:center;font-size:20px;font-weight:700}
 @media(max-width:760px){.vgl .kantel{grid-template-columns:1fr;min-height:0}.helft{height:200px}.midden{padding:16px}}
@@ -91,7 +93,7 @@ footer .blok{background:#000;color:#fff}footer a{color:#ddd}footer .kol a{displa
 <header><div class="wrap hb"><a class="logo" href="/v2/"><span class="blok"><span>MIDAS</span><img class="embleem" src="/assets/logo.png" alt=""><span class="rob">METSELROBOTS</span></span></a><nav><a href="#robots">Robots</a><a href="#vakwerk">Vakwerk</a><a href="#ontwikkelingen">Ontwikkelingen</a><a href="#netwerk">Het netwerk</a><a href="#midas">Over Midas</a><a class="bel" href="tel:+31640506451">Bel Midas</a></nav></div></header>
 
 <div class="hero"><img src="/assets/hero-robot-1.jpg" alt="Metselrobot metselt een muur"><img src="/assets/hero-robot-2.jpg" alt="Robotarm plaatst een steen"><img src="/assets/portret-bouw.jpg" alt="Vakman met helm op de bouwplaats"><div class="sluier"></div>
-<div class="hi"><div class="wrap"><h1>De bouw gaat verder.</h1><p>Robots, vakwerk en advies. Onafhankelijk vergeleken, door één nummer geregeld.</p><a class="knop kp" href="#bouw">Ik bouw</a><a class="knop ks" href="#huis">Ik wil iets aan mijn huis</a></div></div>
+<div class="hi"><div class="wrap"><h1>De bouw gaat verder.</h1><p>Robots, vakwerk en advies. Onafhankelijk vergeleken, door één nummer geregeld.</p><div class="hero-ctas"><a class="knop kp" href="#bouw">Ik bouw</a><a class="knop ks" href="#huis">Ik wil iets aan mijn huis</a></div></div></div>
 <div class="dots"><i class="on"></i><i></i><i></i></div></div>
 
 <div class="wrap twee"><a href="#robots" id="bouw"><h3>Ik bouw.</h3><p>Aannemer, metselbedrijf of ontwikkelaar. Een robot voor volume, een ploeg voor het vakwerk, of allebei. Eén gesprek, deze week een plan.</p><span>Bekijk robots en volume</span></a><a href="#vakwerk" id="huis"><h3>Ik wil iets aan mijn huis.</h3><p>Gevel, voegwerk, dakkapel, kozijnen of schilderwerk. Midas belt je, kiest de juiste vakman en houdt het in de gaten tot het klaar is.</p><span>Bekijk vakwerk</span></a></div>
