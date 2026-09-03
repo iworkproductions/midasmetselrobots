@@ -3,3 +3,4 @@ Allow: /
 Sitemap: https://midasmetselrobots.nl/sitemap.xml
 
 Disallow: /v2/
+Disallow: /v3/
