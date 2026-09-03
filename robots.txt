@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Sitemap: https://midasmetselrobots.nl/sitemap.xml
 
-Disallow: /v3/
+Disallow: /v4/
