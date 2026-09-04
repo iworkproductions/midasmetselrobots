@@ -12,4 +12,11 @@
   <url><loc>https://midasmetselrobots.nl/over-midas/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://midasmetselrobots.nl/voorwaarden/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
   <url><loc>https://midasmetselrobots.nl/privacy/</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://midasmetselrobots.nl/metselwerk/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://midasmetselrobots.nl/voegwerk/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://midasmetselrobots.nl/crepi/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://midasmetselrobots.nl/schilderwerk/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://midasmetselrobots.nl/kozijnen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://midasmetselrobots.nl/dakkapellen/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://midasmetselrobots.nl/avant-garde/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
